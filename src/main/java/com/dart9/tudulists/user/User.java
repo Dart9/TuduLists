@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Commentaire sur la classe User.java
+ */
 @Entity
 @Table(name = "users")
 public class User {
