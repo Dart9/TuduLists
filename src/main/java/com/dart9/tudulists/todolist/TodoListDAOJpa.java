@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository ("todoListDAO")
-@Transactional
 @Scope("singleton")
 public class TodoListDAOJpa implements TodoListDAO {
 

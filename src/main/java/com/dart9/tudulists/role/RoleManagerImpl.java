@@ -2,8 +2,11 @@ package com.dart9.tudulists.role;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service(value = "roleManager")
+@Transactional
 public class RoleManagerImpl implements RoleManager {
 
     @Autowired

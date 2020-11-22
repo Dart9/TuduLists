@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository("propertyDAO")
-@Transactional
 @Scope("singleton")
 public class PropertyDAOJpa implements PropertyDAO {
 
