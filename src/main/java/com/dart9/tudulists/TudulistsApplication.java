@@ -46,6 +46,10 @@ public class TudulistsApplication {
 		RoleManager roleManager = context.getBean("roleManager", RoleManager.class);
 		roleManager.createRole(userRole);
 
+		Role consultRole = new Role();
+		consultRole.setRole("consult");
+		roleManager.createRole(consultRole);
+
 		System.out.println("Utilisateur 1 : " + user1.getFirstName() + " " + user1.getLastName() + " - Date de création = " + user1.getCreateDate() + " " + user1);
 
 		HarryAngel harryAngel = (HarryAngel) context.getBean("harryAngel");
